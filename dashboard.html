@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - EverythingRepairs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EverythingRepairs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="request.html">Request Service</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="dashboard">
+    <div class="container">
+      <h2>Welcome, <span id="username">User</span>!</h2>
+
+      <!-- Client View -->
+      <div id="clientSection" style="display: none;">
+        <h3>Your Posted Requests</h3>
+        <ul id="clientRequests">
+          <!-- Requests populated dynamically -->
+        </ul>
+      </div>
+
+      <!-- Handyman View -->
+      <div id="handymanSection" style="display: none;">
+        <h3>Your Handyman Dashboard</h3>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h4>Total Jobs Completed</h4>
+            <p id="jobCount">0</p>
+          </div>
+          <div class="stat-card">
+            <h4>Total Earnings</h4>
+            <p>₦<span id="earnings">0</span></p>
+          </div>
+          <div class="stat-card">
+            <h4>Average Rating</h4>
+            <p><span id="rating">0.0</span> ⭐</p>
+          </div>
+        </div>
+
+        <h3>Jobs Assigned to You</h3>
+        <ul id="assignedJobs">
+          <!-- Job list loaded via JS -->
+        </ul>
+
+        <h3>Mark Job as Completed</h3>
+        <form id="completeJobForm">
+          <label for="jobId">Job ID:</label>
+          <input type="text" id="jobId" name="jobId" required />
+          <button type="submit">Mark Completed & Notify Client</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EverythingRepairs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

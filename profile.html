@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile - EverythingRepairs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EverythingRepairs</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="profile-section">
+    <div class="container">
+      <h2>My Handyman Profile</h2>
+
+      <div class="profile-card">
+        <img src="images/default-profile.jpg" alt="Profile Picture" id="profileImage" />
+        <h3 id="handymanName">Handyman Name</h3>
+        <p><strong>Skills:</strong> <span id="skills">plumbing, electrical</span></p>
+        <p id="bio">This is your professional bio. You can update it anytime.</p>
+      </div>
+
+      <form id="updateProfileForm" enctype="multipart/form-data">
+        <h3>Update Profile Info</h3>
+
+        <label for="newProfilePic">Change Profile Picture:</label>
+        <input type="file" id="newProfilePic" name="newProfilePic" accept="image/*" />
+
+        <label for="newSkills">Edit Skills:</label>
+        <input type="text" id="newSkills" name="newSkills" placeholder="e.g., plumbing, tailoring" />
+
+        <label for="bioText">Update Bio:</label>
+        <textarea id="bioText" name="bioText" rows="4"></textarea>
+
+        <button type="submit">Update Profile</button>
+      </form>
+
+      <hr />
+
+      <h3>Upload Photos of Past Work</h3>
+      <form id="galleryUploadForm" enctype="multipart/form-data">
+        <input type="file" id="galleryImages" name="galleryImages" accept="image/*" multiple />
+        <button type="submit">Upload to Gallery</button>
+      </form>
+
+      <h3>Past Work Gallery</h3>
+      <div class="gallery" id="workGallery">
+        <!-- Images loaded dynamically -->
+      </div>
+
+      <h3>Client Reviews</h3>
+      <ul id="reviewsList">
+        <!-- Reviews added dynamically after job completion -->
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EverythingRepairs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
