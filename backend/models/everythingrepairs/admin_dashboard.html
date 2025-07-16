@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - EverythingRepairs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EverythingRepairs Admin</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">User Dashboard</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="dashboard">
+    <div class="container">
+      <h2>Pending Service Requests</h2>
+      <ul id="pendingRequests">
+        <!-- Requests loaded dynamically -->
+        <!-- Example format:
+        <li>
+          <p><strong>Client:</strong> John Doe</p>
+          <p><strong>Service:</strong> Plumbing</p>
+          <p><strong>Description:</strong> Leaking pipe under kitchen sink</p>
+          <label>Assign to:</label>
+          <select class="handymanList" data-request-id="123">
+            <option value="">-- Select Handyman --</option>
+          </select>
+          <button class="assignBtn">Assign</button>
+        </li>
+        -->
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EverythingRepairs Admin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/admin_dashboard.js"></script>
+</body>
+</html>
