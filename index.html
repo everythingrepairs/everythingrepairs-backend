@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EverythingRepairs - Hire Skilled Professionals</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>EverythingRepairs</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="request.html">Request Service</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything Repairs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">EverythingRepairs</h1>
+      <nav class="space-x-4">
+        <a href="/signup.html" class="text-gray-700 hover:text-blue-600">Signup</a>
+        <a href="/login.html" class="text-gray-700 hover:text-blue-600">Login</a>
+        <a href="/request.html" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Post a Job</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Connecting You with Trusted Handymen & Women</h2>
-      <p>Plumbers, Electricians, Tailors, and more – all verified and ready to help.</p>
-      <a href="signup.html" class="btn">Get Started</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-20 px-4">
+      <h2 class="text-4xl font-bold mb-4">Find Trusted Local Handymen & Women</h2>
+      <p class="text-lg mb-6">Connect with verified electricians, plumbers, tailors, and more in your area.</p>
+      <a href="/request.html" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition">Post Your Repair Job</a>
+    </section>
 
-  <section class="features">
-    <div class="container grid">
-      <div class="card">
-        <h3>Browse Skilled Workers</h3>
-        <p>View handyman profiles with past work and ratings.</p>
+    <!-- Services Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <h3 class="text-2xl font-bold text-gray-800 text-center mb-10">Popular Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://img.icons8.com/ios-filled/50/000000/plumber.png" alt="Plumbing" class="mb-4 w-12 mx-auto" />
+          <h4 class="text-lg font-semibold text-center">Plumbing</h4>
+          <p class="text-gray-600 text-center mt-2">Fix leaks, install taps, unclog drains & more.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://img.icons8.com/ios-filled/50/000000/electrical.png" alt="Electrical" class="mb-4 w-12 mx-auto" />
+          <h4 class="text-lg font-semibold text-center">Electrical</h4>
+          <p class="text-gray-600 text-center mt-2">Fix wiring, install lights, and restore power.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://img.icons8.com/ios-filled/50/000000/sewing.png" alt="Tailoring" class="mb-4 w-12 mx-auto" />
+          <h4 class="text-lg font-semibold text-center">Tailoring</h4>
+          <p class="text-gray-600 text-center mt-2">Custom clothing repairs, adjustments, and more.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Post a Service Request</h3>
-        <p>Need help? Submit a job request and get matched fast.</p>
-      </div>
-      <div class="card">
-        <h3>Earn & Build Your Brand</h3>
-        <p>Skilled workers can sign up, upload photos, and get hired.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
+    <!-- Testimonials Section -->
+    <section class="bg-gray-200 py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8">What Our Users Say</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <p class="text-gray-700 italic">“EverythingRepairs helped me find a plumber within 30 minutes. Amazing service!”</p>
+            <p class="text-sm text-gray-500 mt-4">– Mary O.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <p class="text-gray-700 italic">“The electrician was professional and prompt. I highly recommend this platform.”</p>
+            <p class="text-sm text-gray-500 mt-4">– James K.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center p-6 text-gray-600 mt-10 border-t">
       <p>&copy; 2025 EverythingRepairs. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
